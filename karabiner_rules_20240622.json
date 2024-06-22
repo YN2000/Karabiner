@@ -1,0 +1,116 @@
+{
+    "title": "Karabiner_rules_template",
+    "rules": [
+        {
+            "description": "Rule explanation",
+            "manipulators":
+            [
+
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_option"
+                    },
+                    "to": [
+                        {
+                            "key_code": "japanese_eisuu"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "com.splashtop.stb.macosx/Applications/Splashtop Business.app/Contents/MacOS/Splashtop Business"
+                            ]
+                        }
+                    ],
+                    "description": "left_option to 英数 unless Splashtop"
+                },
+
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_option"
+                    },
+                    "to": [
+                        {
+                            "key_code": "japanese_kana"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "com.splashtop.stb.macosx/Applications/Splashtop Business.app/Contents/MacOS/Splashtop Business"
+                            ]
+                        }
+                    ],
+                    "description": "right_option to japanese_kana unless Splashtop"
+                },
+
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_control"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "com.splashtop.stb.macosx/Applications/Splashtop Business.app/Contents/MacOS/Splashtop Business"
+                            ]
+                        }
+                    ],
+                    "description": "left_contol to left_command unless Splashtop"
+                },
+
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "print_screen"
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "com.splashtop.stb.macosx/Applications/Splashtop Business.app/Contents/MacOS/Splashtop Business"
+                            ]
+                        }
+                    ],
+                    "description": "print_screen to right_command unless Splashtop"
+                },
+
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_command"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_option"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "com.splashtop.stb.macosx/Applications/Splashtop Business.app/Contents/MacOS/Splashtop Business"
+                            ]
+                        }
+                    ],
+                    "description": "left_command to left_option unless Splashtop"
+                }
+            ]
+        }
+    ]
+}

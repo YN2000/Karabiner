@@ -1,0 +1,63 @@
+{
+    "title": "Karabiner_rules_template",
+    "rules": [
+        {
+            "description": "Rule explanation",
+            "manipulators":
+            [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "Input key code"
+                    },
+                    "to": [
+                        {
+                            "key_code": "Output key code"
+                        }
+                    ],
+                    "description": "rules for all applications"
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "Input key code"
+                    },
+                    "to": [
+                        {
+                            "key_code": "Output key code"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "com.splashtop.stb.macosx/Applications/Splashtop Business.app/Contents/MacOS/Splashtop Business"
+                            ]
+                        }
+                    ],
+                    "description": "rules except for Splashtop"
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "Input key code"
+                    },
+                    "to": [
+                        {
+                            "key_code": "Output key code"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "com.splashtop.stb.macosx/Applications/Splashtop Business.app/Contents/MacOS/Splashtop Business"
+                            ]
+                        }
+                    ],
+                    "description": "rules for Splashtop"
+                }
+            ]
+        }
+    ]
+}
