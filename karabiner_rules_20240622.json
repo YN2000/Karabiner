@@ -1,8 +1,8 @@
 {
-    "title": "Karabiner_rules_template",
+    "title": "Karabiner rules set on June 22nd 2024",
     "rules": [
         {
-            "description": "Rule explanation",
+            "description": "Rules unless Splashtop",
             "manipulators":
             [
 
