@@ -76,7 +76,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "right_option"
+                            "key_code": "right_control"
                         }
                     ],
                     "conditions": [
@@ -87,7 +87,7 @@
                             ]
                         }
                     ],
-                    "description": "print_screen to right_option unless Splashtop"
+                    "description": "print_screen to right_control unless Splashtop"
                 },
 
                 {
