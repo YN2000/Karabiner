@@ -76,7 +76,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "right_command"
+                            "key_code": "right_option"
                         }
                     ],
                     "conditions": [
@@ -87,7 +87,7 @@
                             ]
                         }
                     ],
-                    "description": "print_screen to right_command unless Splashtop"
+                    "description": "print_screen to right_option unless Splashtop"
                 },
 
                 {
@@ -109,6 +109,27 @@
                         }
                     ],
                     "description": "left_command to left_option unless Splashtop"
+                },
+
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_control"
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "com.splashtop.stb.macosx/Applications/Splashtop Business.app/Contents/MacOS/Splashtop Business"
+                            ]
+                        }
+                    ],
+                    "description": "right_control to right_command unless Splashtop"
                 }
             ]
         }
