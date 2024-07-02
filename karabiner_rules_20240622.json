@@ -2,7 +2,7 @@
     "title": "Karabiner rules set on June 22nd 2024",
     "rules": [
         {
-            "description": "Rules unless Splashtop",
+            "description": "Rules for Splashtop",
             "manipulators":
             [
 
@@ -130,6 +130,111 @@
                         }
                     ],
                     "description": "right_control to right_command unless Splashtop"
+                },
+
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_option"
+                    },
+                    "to": [
+                        {
+                            "key_code": "japanese_eisuu"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "com.splashtop.stb.macosx/Applications/Splashtop Business.app/Contents/MacOS/Splashtop Business"
+                            ]
+                        }
+                    ],
+                    "description": "left_option to 英数 if Splashtop"
+                },
+
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_option"
+                    },
+                    "to": [
+                        {
+                            "key_code": "japanese_kana"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "com.splashtop.stb.macosx/Applications/Splashtop Business.app/Contents/MacOS/Splashtop Business"
+                            ]
+                        }
+                    ],
+                    "description": "right_option to japanese_kana if Splashtop"
+                },
+
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_control"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_control"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "com.splashtop.stb.macosx/Applications/Splashtop Business.app/Contents/MacOS/Splashtop Business"
+                            ]
+                        }
+                    ],
+                    "description": "left_contol to left_control if Splashtop"
+                },
+
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "print_screen"
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_alt"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "com.splashtop.stb.macosx/Applications/Splashtop Business.app/Contents/MacOS/Splashtop Business"
+                            ]
+                        }
+                    ],
+                    "description": "print_screen to right_control if Splashtop"
+                },
+
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_control"
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_control"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "com.splashtop.stb.macosx/Applications/Splashtop Business.app/Contents/MacOS/Splashtop Business"
+                            ]
+                        }
+                    ],
+                    "description": "right_control to right_command if Splashtop"
                 }
             ]
         }
