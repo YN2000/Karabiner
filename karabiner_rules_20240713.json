@@ -108,7 +108,7 @@
                     ],
                     "type": "basic"
                 },
-                
+
                 {
                     "conditions": [
                         {
@@ -125,6 +125,54 @@
                     "to": [
                         {
                             "key_code": "right_command"
+                        }
+                    ],
+                    "type": "basic"
+                },
+
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "^com\\.splashtop\\.stb\\.macosx"
+                            ],
+                            "type": "frontmost_application_unless"
+                        }
+                    ],
+                    "description": "enable home button unless splashtop",
+                    "from": {
+                        "key_code": "home"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_arrow",
+                            "modifiers": [
+                                "right_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "^com\\.splashtop\\.stb\\.macosx"
+                            ],
+                            "type": "frontmost_application_unless"
+                        }
+                    ],
+                    "description": "enable end button unless splashtop",
+                    "from": {
+                        "key_code": "end"
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_arrow",
+                            "modifiers": [
+                                "right_command"
+                            ]
                         }
                     ],
                     "type": "basic"
